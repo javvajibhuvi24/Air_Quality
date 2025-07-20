@@ -29,10 +29,11 @@ This project builds a **clean, modular, production-ready machine learning pipeli
 
 ### 📂 Dataset
 
-The dataset contains hourly averaged responses from a gas multisensor device deployed in an Italian city.
+This project uses the **Air Quality Dataset** from Kaggle.
+The dataset contains hourly measurements of air pollutants collected from multiple monitoring stations.
 **Target variable:** `CO(GT)` (Carbon Monoxide concentration).
 
-📥 **Source:** [Air Quality Dataset (UCI)](https://archive.ics.uci.edu/ml/datasets/Air+Quality)
+📥 **Source:** [Air Quality Dataset on Kaggle](https://www.kaggle.com/datasets/fedesoriano/air-quality-data-set)
 
 ---
 
@@ -45,21 +46,23 @@ The dataset contains hourly averaged responses from a gas multisensor device dep
    cd Air_Quality
    ```
 
-2. Open the notebook in **Google Colab** or Jupyter.
+2. Download the dataset from Kaggle and place it in the project folder.
 
-3. Run the notebook cells sequentially to:
+3. Open the notebook in **Google Colab** or Jupyter.
+
+4. Run the notebook cells sequentially to:
 
    * Load and clean the dataset.
    * Visualize and analyze the data.
    * Train and evaluate the ML model.
 
-4. The trained model is saved as `air_quality_model.pkl`.
+5. The trained model is saved as `air_quality_model.pkl`.
 
 ---
 
 ### 📊 Project Workflow
 
-1. **Data Ingestion** – Load raw dataset.
+1. **Data Ingestion** – Load raw dataset from Kaggle.
 2. **Preprocessing** – Handle missing values and scale features.
 3. **EDA** – Generate visual insights and explore relationships.
 4. **Model Training** – Train a Random Forest Regressor with hyperparameter tuning.
